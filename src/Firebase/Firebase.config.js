@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyC2d42qlecEC1IHAlLzBVoYzaS-RQxoTB0",
-  authDomain: "fir-pracitce-sawmill.firebaseapp.com",
-  projectId: "fir-pracitce-sawmill",
-  storageBucket: "fir-pracitce-sawmill.appspot.com",
-  messagingSenderId: "139708926739",
-  appId: "1:139708926739:web:5747df57b3600298d0e8e6"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
   };
 
 
