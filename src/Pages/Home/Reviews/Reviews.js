@@ -16,7 +16,7 @@ const Reviews = () => {
    
     
     return (
-        <Box style={{width:"100%",height:'50vh'}} sx={{ mt: 8 }}>
+        <Box style={{width:"100%",height:'50vh',marginTop:'80px',marginBottom:'80px'}}>
             <Typography variant='h3'>
                 What do our customers think?
            </Typography>
@@ -24,8 +24,11 @@ const Reviews = () => {
             <Container style={{
                 display: 'flex',
                 alignItems:'center',
-                overflowX:'scroll',
-                height:'100%'
+                overflowX:'hidden',
+                height:'100%',
+                width:'100%',
+                flexWrap:'wrap',
+                overflowY:'scroll'
                 }}>
 
                     {

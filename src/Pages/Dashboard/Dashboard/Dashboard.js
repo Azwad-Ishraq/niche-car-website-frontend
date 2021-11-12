@@ -1,5 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import MenuIcon from '@mui/icons-material/Menu';
 
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -22,6 +23,7 @@ import Review from './Review/Review';
 import AddProduct from '../AddProduct/AddProduct';
 import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import ManageProducts from './ManageProducts/ManageProducts';
+import { AppBar, IconButton } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -168,7 +170,30 @@ function Dashboard(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-
+            <AppBar
+                
+                position="fixed"
+                sx={{
+                    width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    ml: { sm: `${drawerWidth}px` },
+                }}
+                style={{backgroundColor:'transparent',boxShadow:"none"}}
+            >
+                <Toolbar>
+                    <IconButton
+                        color='default'
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        sx={{ mr: 2, display: { sm: 'none' } }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography  variant="h6" noWrap component="div">
+                        
+          </Typography>
+                </Toolbar>
+            </AppBar>
             <Box
                 component="nav"
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
@@ -205,7 +230,9 @@ function Dashboard(props) {
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
+                
                 <Toolbar />
+
 
                 <Switch>
 

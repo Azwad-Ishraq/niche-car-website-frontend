@@ -12,7 +12,7 @@ const SingleReview = (props) => {
     return (
         <Card sx={{m:3}} style={{height:'80%',backgroundColor:'transparent',width:'100%'}} >
       <CardContent sx={{p:2}} >
-        <Typography style={{textAlign:'left'}} sx={{ fontSize: 14 ,p:2}}  color="text.secondary" gutterBottom>
+        <Typography style={{textAlign:'left',color:'#2ecc71'}} sx={{ fontSize: 14 ,p:2}}   gutterBottom>
         {review.userName}
         </Typography>
        
