@@ -1,8 +1,15 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using Meterial Ui [Create React App](https://vigorous-elion-5e344d.netlify.app/).
 
-## Available Scripts
+## Website Features
+1. User can login using both email-password and google.
+2. user can place order.
+3. an admin can add and delete products from the database of the website
+4. user can see his/her order and delete the order
+5. user can also drop a review for the website which will be displayed in the homepage.
+
+
 
 In the project directory, you can run:
 
