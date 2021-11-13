@@ -22,7 +22,7 @@ const CarDetail = (props) => {
     const [car,setCar] = useState({})
     const [success,setSuccess] = useState(false)
     useEffect(()=>{
-        fetch(`http://localhost:5000/cars/${id}`)
+        fetch(`https://pacific-waters-83697.herokuapp.com/cars/${id}`)
         .then(res => res.json())
         .then(data => setCar(data))
     },[])
@@ -35,7 +35,7 @@ const CarDetail = (props) => {
             price: price,
             userName: user.displayName
         }
-        fetch(`http://localhost:5000/orders`,{
+        fetch(`https://pacific-waters-83697.herokuapp.com/orders`,{
             method:'POST',
             headers:{
                 'content-type':'application/json'

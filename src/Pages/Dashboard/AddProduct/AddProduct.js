@@ -18,7 +18,7 @@ const AddProduct = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         const Cardata = { ...car };
-        fetch(`http://localhost:5000/cars`, {
+        fetch(`https://pacific-waters-83697.herokuapp.com/cars`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -36,7 +36,7 @@ const AddProduct = () => {
     }
     return (
         <Box>
-            <Typography variant='h3'>
+            <Typography sx={{fontFamily:'monospace'}} variant='h3'>
                 Add Product
             </Typography>
 

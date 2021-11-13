@@ -18,7 +18,7 @@ const MyOrders = () => {
   const { user } = useAuth()
   const [haveOrder, setHaveOrder] = useState(false)
   useEffect(() => {
-    fetch(`http://localhost:5000/orders/${user.email}`)
+    fetch(`https://pacific-waters-83697.herokuapp.com/orders/${user.email}`)
       .then(res => res.json())
       .then(data => {
 
@@ -35,7 +35,7 @@ const MyOrders = () => {
     //  eslint-disable-next-line no-restricted-globals
     const isConfirm = confirm('Ar You Sure You Want To Remove Order')
     if (isConfirm) {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`https://pacific-waters-83697.herokuapp.com/orders/${id}`, {
         method: 'DELETE'
       })
         .then(res => res.json())
@@ -51,11 +51,11 @@ const MyOrders = () => {
   }
   return (
     <Box>
-      <Typography variant='h3'>
+      <Typography sx={{fontFamily:'monospace',mb:5}} variant='h3'>
         My Orders
            </Typography>
 
-      {!haveOrder && <Typography variant='h5'>
+      {!haveOrder && <Typography sx={{fontFamily:'monospace'}} variant='h5'>
         No Orders
            </Typography>}
 

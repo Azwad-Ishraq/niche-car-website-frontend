@@ -30,19 +30,19 @@ const Header = () => {
 <Grid style={centerElement} item xs={12} sm={12} md={6}>
 
 
-        <Typography sx={{mb:5}} style={{width:'100%',textAlign:'left'}}  variant='h1'>
+        <Typography sx={{mb:5,fontFamily:'monospace',fontWeight:300}} style={{width:'100%',textAlign:'left'}}  variant='h2'>
                <span style={{color:'#2ecc71'}}> Power &</span>
               
                 <span style={{color:'white'}}> Beauty</span>                
                 
         </Typography>
 
-        <Typography sx={{mb:5}} style={{color:'white',textAlign:'left',fontWeight:'300',width:'50%'}} variant='h5'>
+        <Typography sx={{mb:5,fontFamily:'monospace'}} style={{color:'white',textAlign:'left',fontWeight:'300',width:'100%'}} variant='h5'>
         Free Library’s $1M auto archives are moving to Philly’s world-famous car museum and to a Hershey attraction
         </Typography>
 
 
-        <Button style={{borderRadius:'0',boxShadow:'0px 0px 0px'}} variant="contained">Discover Today</Button>
+        <Button sx={{fontFamily:'monospace'}} style={{borderRadius:'0',boxShadow:'0px 0px 0px'}} variant="contained">Discover Today</Button>
         
 </Grid>
 

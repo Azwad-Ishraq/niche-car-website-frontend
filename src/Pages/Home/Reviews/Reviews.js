@@ -6,7 +6,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews`)
+        fetch(`https://pacific-waters-83697.herokuapp.com/reviews`)
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
@@ -17,7 +17,7 @@ const Reviews = () => {
     
     return (
         <Box style={{width:"100%",height:'50vh',marginTop:'80px',marginBottom:'80px'}}>
-            <Typography variant='h3'>
+            <Typography sx={{fontFamily:'monospace'}} variant='h3'>
                 What do our customers think?
            </Typography>
 

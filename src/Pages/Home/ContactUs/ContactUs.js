@@ -10,7 +10,7 @@ const ContactUs = () => {
             <Box sx={{ p: 5 }} style={{ color: 'white' }}>
 
 
-                <Typography style={{ textAlign: 'center',color:'black',borderBottom:'5px solid #2ecc71' }} variant='h4'>
+                <Typography sx={{fontFamily:'monospace'}} style={{ textAlign: 'center',color:'black',borderBottom:'5px solid #2ecc71' }} variant='h4'>
                     Send A Message
                         </Typography>
 
@@ -20,7 +20,7 @@ const ContactUs = () => {
                         display:'flex',
                         flexDirection:"column"
                     }}>
-                        <TextField sx={{ mb: 3 }} style={{ width: '100%' }} id="standard-basic" label="Full Name" variant="standard" />
+                        <TextField sx={{ mb: 3 ,fontFamily:'monospace'}} style={{ width: '100%' }} id="standard-basic" label="Full Name" variant="standard" />
 
                         <TextField sx={{ mb: 3 }} style={{ width: '100%' }} id="standard-basic" label="Email Adress" variant="standard" />
 
@@ -35,7 +35,7 @@ const ContactUs = () => {
 
                             variant="filled"
                         />
-                        <Button style={{borderRadius:'0',boxShadow:'0px 0px 0px',width:'100%'}} variant="contained">Submit</Button>
+                        <Button sx={{fontFamily:'monospace'}} style={{borderRadius:'0',boxShadow:'0px 0px 0px',width:'100%'}} variant="contained">Submit</Button>
                     </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>

@@ -30,15 +30,15 @@ const SingleCar = (props) => {
       />
       <CardContent style={{textAlign:"left"}}>
 
-        <Typography sx={{mb:2}}  variant="h5" color="text.secondary">
+        <Typography sx={{mb:2,fontFamily:'monospace'}}  variant="h5" color="text.secondary">
           {name}
         </Typography>
-        <Typography sx={{mb:1}} style={{color:'#2ecc71'}}  variant="h6" color="text.secondary">
+        <Typography sx={{mb:1,fontFamily:'monospace'}} style={{color:'#2ecc71'}}  variant="h6" color="text.secondary">
           {price}$
         </Typography>
 
         <Link style={{color:'white',textDecoration:'none'}} to={`/cars/${_id}`}>
-        <Button style={{borderRadius:'0',boxShadow:'0px 0px 0px'}} variant="contained">Purchase</Button>
+        <Button sx={{fontFamily:'monospace'}} style={{borderRadius:'0',boxShadow:'0px 0px 0px'}} variant="contained">Purchase</Button>
         </Link>
 
       </CardContent>

@@ -25,32 +25,33 @@ const Footer = () => {
 
 <Grid  style={{display:'flex',flexDirection:'column',justifyContent:'center'}} item xs={12} md={6}>
 
-    <Typography sx={{pb:3}} variant='h4'>
+    <Typography  sx={{pb:3,fontWeight:200,fontFamily:'monospace'}} variant='h4'>
         Get In Touch
     </Typography>
 
-    <Typography variant='p'>
+    <Typography sx={{fontFamily:'monospace'}} variant='p'>
     (+1] 515-602-6843
     </Typography>
 
 </Grid>
 
 <Grid style={{display:'flex',flexDirection:'column',justifyContent:'center'}} item xs={12} md={6}>
-    <Typography sx={{pb:3}} variant='h4'>
+
+    <Typography sx={{pb:3,fontFamily:'monospace'}} variant='h4'>
     <i style={{marginRight:'10px'}} class="fas fa-map-marker-alt"></i>
     Location
     </Typography>
-    <Typography  variant='p'>
+    <Typography sx={{fontFamily:'monospace'}}  variant='p'>
     3865 Nutters Barn Lane Clarion, IA 50525
     </Typography>
-    <Typography sx={{pt:3,pb:3}}  variant='h4'>
+    <Typography sx={{pt:3,pb:3,fontFamily:'monospace'}}  variant='h4'>
     <i style={{marginRight:'10px'}} class="fas fa-envelope"></i>
     Email
     </Typography>
-    <Typography style={{color:'#2dcc70',cursor:'pointer'}}  variant='p'>
+    <Typography sx={{fontFamily:'monospace'}} style={{color:'#2dcc70',cursor:'pointer'}}  variant='p'>
     chaka@gari.com
     </Typography>
-    <Typography sx={{mt:3}}  variant='h4'>
+    <Typography sx={{mt:3,fontFamily:'monospace'}}  variant='h4'>
     <i style={{marginRight:'10px'}} class="fab fa-google"></i>
     <i style={{marginRight:'10px'}} class="fab fa-facebook"></i>
     <i class="fab fa-instagram"></i>
@@ -60,7 +61,7 @@ const Footer = () => {
 </Grid>
 <Grid sx={{mt:7}} style={{display:'flex',alignItems:'flex-end',height:'100%',textAlign:'center',justifyContent:'center'}} item xs={12} md={12}>
     
-    <Typography style={{textAlign:'center'}} variant='p'>
+    <Typography sx={{fontFamily:'monospace'}} style={{textAlign:'center'}} variant='p'>
     ©Chaka.com 2021
     </Typography>
 </Grid>

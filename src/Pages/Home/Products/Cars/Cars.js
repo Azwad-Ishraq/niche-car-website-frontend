@@ -8,13 +8,13 @@ const Cars = ({itemCount}) => {
     
     const [cars,setCars] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/cars`)
+        fetch(`https://pacific-waters-83697.herokuapp.com/cars`)
         .then(res => res.json())
         .then(data => setCars(data))
     },[])
     return (
         <Container sx={{mt:12}}>
-            <Typography style={{color:'#2ecc71'}} variant='h3'>
+            <Typography sx={{fontFamily:'monospace'}} style={{color:'#2ecc71'}} variant='h3'>
                 Our Cars Collection
             </Typography>
             <Grid  sx={{mt:5}} container spacing={2}>

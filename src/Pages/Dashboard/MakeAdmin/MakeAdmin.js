@@ -11,7 +11,7 @@ const MakeAdmin = () => {
     const handleSubmit = e => {
         const user = {email}
         e.preventDefault()
-        fetch(`http://localhost:5000/users/admin`,{
+        fetch(`https://pacific-waters-83697.herokuapp.com/users/admin`,{
             method:'PUT',
             headers: {
                 'content-type':'application/json'
@@ -31,7 +31,7 @@ const MakeAdmin = () => {
     }
     return (
         <Box>
-            <Typography variant='h3'>
+            <Typography sx={{fontFamily:'monospace'}} variant='h3'>
                 Make Admin
             </Typography>
             <form style={{display:'flex',justifyContent:'center'}} onSubmit={handleSubmit}>

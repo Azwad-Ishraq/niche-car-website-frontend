@@ -12,7 +12,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([])
     const [success, setSuccess] = useState(false)
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://pacific-waters-83697.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -21,7 +21,7 @@ const ManageAllOrders = () => {
         //  eslint-disable-next-line no-restricted-globals
         const isConfirm = confirm('Ar You Sure You Want To Remove Order')
         if (isConfirm) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://pacific-waters-83697.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -44,7 +44,7 @@ const ManageAllOrders = () => {
             status: 'shipped'
         }
 
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://pacific-waters-83697.herokuapp.com/orders/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

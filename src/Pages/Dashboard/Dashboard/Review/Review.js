@@ -24,7 +24,7 @@ const Review = () => {
         }
         
 
-        fetch(`http://localhost:5000/reviews`, {
+        fetch(`https://pacific-waters-83697.herokuapp.com/reviews`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const Review = () => {
     }
     return (
         <Box style={{ height: '80vh' }}>
-            <Typography variant='h3'>
+            <Typography sx={{fontFamily:'monospace'}} variant='h3'>
                 Review
             </Typography>
 

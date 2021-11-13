@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const ManageProducts = () => {
     const [cars,setCars] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/cars`)
+        fetch(`https://pacific-waters-83697.herokuapp.com/cars`)
         .then(res => res.json())
         .then(data => setCars(data))
     },[])
@@ -13,7 +13,7 @@ const ManageProducts = () => {
         //  eslint-disable-next-line no-restricted-globals
         const isConfirm =   confirm('Ar You Sure You Want To Remove Order')
         if(isConfirm){
-            fetch(`http://localhost:5000/cars/${id}`,{
+            fetch(`https://pacific-waters-83697.herokuapp.com/cars/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())
